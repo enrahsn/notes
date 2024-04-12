@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import 'viwes/notes_view.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -7,15 +9,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter notes',
       theme: ThemeData(brightness: Brightness.dark),
+      // theme: ThemeData(brightness: Brightness.light),
       // theme: ThemeData
       // theme: ThemeData(
         // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         // useMaterial3: true,
       // .dark(),
       // home: const MyHomePage(title: 'Flutter NOTES Page'),
-      home: const MyHomePage(title: 'Flutter NOTES Page'),
+      home: const NotesApp(title: 'Flutter NOTES Page'),
     );
   }
 }
