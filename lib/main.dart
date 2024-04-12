@@ -29,7 +29,7 @@ class NotesApp extends StatelessWidget {
       // ],
 // supportedLocales: const [Locale("ar","AE")],
 // locale:const Locale("ar","AE"),
-      home:  const NotesView(
+      home: const NotesView(
         title: 'Notes',
       ),
     );
