@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 
 import '../models/app_bar.dart';
+import '../models/card.dart';
 
 class NotesViewBody extends StatelessWidget {
   const NotesViewBody({super.key});
@@ -16,6 +17,8 @@ class NotesViewBody extends StatelessWidget {
           SizedBox(height: 20,),
           // SizedBox(height: 50,),
           MyAppBar(),
+          SizedBox(height: 10,),
+          NoteItem(),
         ],
       ),
     );

@@ -9,11 +9,20 @@ class NoteItem extends StatelessWidget {
         color: Colors.yellow,
         borderRadius: BorderRadius.circular(16),
       ),
-      child: const Row(
+      child: Column(
+                // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          ListTile(title: Text('Flutter Tips',
-          style:  TextStyle(fontSize: 28,color: Colors.amber),)
+          ListTile(
+            title: const Text('Flutter Tips',style: TextStyle(color: Colors.black),),
+          subtitle:  const Text('build your career with tharwat samy',style: TextStyle(color: Colors.black),),
+          trailing: IconButton(onPressed: (){}, icon:  const Icon(Icons.delete,color: Colors.black
+          ),),
           ),
+          const Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text('May 21, 2023',style: TextStyle(color: Colors.black),),
+          )
           // Spacer(),
         ],
       ),
