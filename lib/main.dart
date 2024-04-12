@@ -19,10 +19,11 @@ class MyApp extends StatelessWidget {
         // useMaterial3: true,
       // .dark(),
       // home: const MyHomePage(title: 'Flutter NOTES Page'),
-      home: const NotesApp(title: 'Flutter NOTES Page'),
+      home: const NotesView(title: 'Flutter NOTES Page'),
     );
   }
 }
+/*
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
   final String title;
@@ -65,3 +66,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+*/

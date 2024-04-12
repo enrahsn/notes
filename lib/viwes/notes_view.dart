@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../widgets/menu.dart';
 
-class NotesApp extends StatelessWidget {
-  const NotesApp({super.key, required String title});
+class NotesView extends StatelessWidget {
+  const NotesView({super.key, required String title});
 
   @override
   Widget build(BuildContext context) {
