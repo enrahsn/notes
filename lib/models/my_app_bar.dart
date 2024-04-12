@@ -6,6 +6,10 @@ class MyAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Row(
+      children: [
+        Text('Notes',style:  TextStyle(color: Colors.amber),)
+      ],
+    );
   }
 }
