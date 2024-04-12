@@ -8,12 +8,15 @@ class NotesViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        SizedBox(height: 50,),
-        MyAppBar(),
-      ],
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 24),
+      child: Column(
+        // mainAxisSize: MainAxisSize.min,
+        children: [
+          SizedBox(height: 50,),
+          MyAppBar(),
+        ],
+      ),
     );
   }
 }
