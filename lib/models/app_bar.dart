@@ -10,9 +10,10 @@ class MyAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Row(
       children: [
-        Text('Notes',style:  TextStyle(fontSize: 28,color: Colors.amber),)
+        Text('Notes',style:  TextStyle(fontSize: 28,color: Colors.amber),),
+        Spacer(),
+        MySearchIcon(),
       ],
-      MySearchIcon(),
     );
   }
 }
