@@ -1,3 +1,4 @@
-export 'my_app_bar.dart';
+export 'app_bar.dart';
 export 'photo.dart';
+export 'search_icon.dart';
 
