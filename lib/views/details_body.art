@@ -1,5 +1,5 @@
-import 'dot.dart';
-import 'product_image.dart';
+import '../viwes/dot.dart';
+import '../viwes/product_image.dart';
 import '../../models/product.dart';
 import 'package:flutter/material.dart';
 import 'package:store/constant/constant.dart';

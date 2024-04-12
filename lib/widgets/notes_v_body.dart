@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'package:notes/models/app_bar.dar';
+import '../models/app_bar.dart';
 import '../models/card.dart';
 
 class NotesViewBody extends StatelessWidget {

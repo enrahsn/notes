@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../views/notes_view.dart';
 
 void main() {
   runApp(const NotesApp());
@@ -28,7 +29,7 @@ class NotesApp extends StatelessWidget {
       // ],
 // supportedLocales: const [Locale("ar","AE")],
 // locale:const Locale("ar","AE"),
-      home:  NotesView(
+      home:  const NotesView(
         title: 'Notes',
       ),
     );
