@@ -9,14 +9,14 @@ class NotesView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: const MyDrawer(),
-      appBar: AppBar(title: const Text('Third Screen title'),),
+      appBar: AppBar(title: const Text('notes view title'),),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              onPressed: () => Navigator.pushNamed(context, '/third'),
-              child: const Text("Third Screen"),
+              onPressed: () => Navigator.pushNamed(context, '/notes_view'),
+              child: const Text("notes_view Screen"),
             ),]
             ),
             ),
