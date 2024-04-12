@@ -1,23 +1,21 @@
-import 'screens/home_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:store/constant/constant.dart';
-
 
 void main() {
-  runApp(const Store());
+  runApp(const NotesApp());
 }
 
-class Store extends StatelessWidget {
-  const Store({super.key});
+class NotesApp extends StatelessWidget {
+  const NotesApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Fruits Store',
-      color: kMainColor,
+      title: 'Notes',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        brightness: Brightness.dark,
+        fontFamily: 'Poppins',
+        // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
         // textTheme: GoogleFonts.almaraiTextTheme(Theme.of(context).textTheme),
         // primaryColor: kPrimaryColor,
@@ -30,8 +28,8 @@ class Store extends StatelessWidget {
       // ],
 // supportedLocales: const [Locale("ar","AE")],
 // locale:const Locale("ar","AE"),
-      home: const MyHomeScreen(
-        title: 'مكة للفواكه',
+      home:  NotesView(
+        title: 'Notes',
       ),
     );
   }
