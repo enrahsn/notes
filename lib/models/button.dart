@@ -6,12 +6,12 @@ class MyButton extends StatelessWidget {
   final String? txt;
   @override
   Widget build(BuildContext context) {
-    //  double scrHeight = MediaQuery.of(context).size.height; //افضل حل (حتى الان)
+     double scrHeight = MediaQuery.of(context).size.height; //افضل حل (حتى الان)
     double scrWidth = MediaQuery.of(context).size.width;
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: scrWidth * .1),
       child: Container(
-        height: scrWidth * .1,
+        height: scrHeight * .071,
         // width: SizeConfig.scrWidth,
         width: scrWidth * .6,
         decoration: BoxDecoration(
