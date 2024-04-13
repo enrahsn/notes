@@ -1,13 +1,22 @@
 import 'package:flutter/material.dart';
 
-class MyAppBar extends StatelessWidget {
-  const MyAppBar({super.key});
+import '../core/colors.dart';
+import 'icon.dart';
 
+class MyAppBar extends StatelessWidget {
+  const MyAppBar({super.key, required this.title, required this.icon});
+final String title;
+final IconData icon;
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text('My Notes :', style:  TextStyle(color: Colors.amber,fontSize: 18),)
+    Text(title, style:  const TextStyle(color: kPrimaryColor,fontSize: 18),),
+
+        // MyTitle(title: 'My Notes :',),
+        const Spacer(),
+        MyIcon( icon: icon,)
       ],
     );
   }
