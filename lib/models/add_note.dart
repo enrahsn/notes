@@ -13,10 +13,12 @@ class AddNote extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 16),
       child: Column(
         children: [
-          SizedBox(height: 32,),
+          // SizedBox(height: 32,),
+          Spacer(flex: 2,),
           MyTxtField(hint: 'Title :', maxLines: 1, ),
+          // SizedBox(height: 16,),
           Spacer(),
-          MyTxtField(hint: 'Details :', maxLines: 4,),
+          MyTxtField(hint: 'Details :', maxLines: 5,),
           Spacer(),
         ],
       ),

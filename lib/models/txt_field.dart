@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../core/colors.dart';
 class MyTxtField extends StatelessWidget {
-  const MyTxtField({super.key, required this.hint, required this.maxLines});
+  const MyTxtField({super.key, required this.hint, this.maxLines=1});
   final String hint;
   final int maxLines;
 
