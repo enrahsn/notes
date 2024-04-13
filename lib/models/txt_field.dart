@@ -1,9 +1,36 @@
-import '../core/colors.dart';
+// import '../core/colors.dart';
 import 'package:flutter/material.dart';
 
-// ignore_for_file: use_key_in_widget_constructors
+import '../core/colors.dart';
+class MyTxtField extends StatelessWidget {
+  const MyTxtField({super.key});
 
-// ignore: must_be_immutable
+  @override
+  Widget build(BuildContext context) {
+    return TextField(
+      cursorColor: kPrimaryColor,
+      decoration: InputDecoration(
+        border: buildBorder(),
+        enabledBorder: buildBorder(),
+        focusedBorder: buildBorder(kPrimaryColor),
+        hintText: 'Enter Note title : ',
+        hintStyle: const TextStyle(color: kPrimaryColor)
+        )
+    );
+  }
+
+  OutlineInputBorder buildBorder([color]) {
+    return OutlineInputBorder(
+        borderRadius: BorderRadius.circular(8),
+        borderSide: BorderSide(
+          color:color ?? Colors.white,
+          width: 2,
+
+        )
+        );
+  }
+}
+/*
 class MyTxtField extends StatelessWidget {
   final TextInputType mytextInputType;
   final bool isPassword;
@@ -94,3 +121,4 @@ class MyTxtField extends StatelessWidget {
     );
   }
 }
+*/
