@@ -6,7 +6,7 @@ class NoteItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.yellow,
+        color: const Color(0xffFFCC80),
         borderRadius: BorderRadius.circular(16),
       ),
       child: Column(
@@ -15,13 +15,13 @@ class NoteItem extends StatelessWidget {
         children: [
           ListTile(
             title: const Text('Flutter Tips',style: TextStyle(color: Colors.black,fontSize: 26,),),
-          subtitle:  const Text('build your career with tharwat samy',style: TextStyle(color: Colors.black),),
-          trailing: IconButton(onPressed: (){}, icon:  const Icon(Icons.delete,color: Colors.black
-          ),),
+          subtitle: Text('build your career with tharwat samy',style: TextStyle(color: Colors.black.withOpacity(.4),fontSize: 20,),),
+          trailing: IconButton(onPressed: (){}, icon:  const Icon(Icons.delete,color: Colors.black,size:30,),),
+          // trailing: IconButton(onPressed: (){}, icon: Icon(FontAwesomeIcons.trash,color: Colors.black,size:30,),),
           ),
-          const Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Text('May 21, 2023',style: TextStyle(color: Colors.black),),
+           Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text('May 21, 2022',style: TextStyle(color: Colors.black.withOpacity(.4)),),
           )
           // Spacer(),
         ],
