@@ -3,18 +3,21 @@ import 'package:flutter/material.dart';
 
 import '../core/colors.dart';
 class MyTxtField extends StatelessWidget {
-  const MyTxtField({super.key});
+  const MyTxtField({super.key, required this.hint, required this.maxLines});
+  final String hint;
+  final int maxLines;
 
   @override
   Widget build(BuildContext context) {
     return TextField(
+      maxLines:maxLines,
       cursorColor: kPrimaryColor,
       decoration: InputDecoration(
+        hintText: hint,
         border: buildBorder(),
         enabledBorder: buildBorder(),
         focusedBorder: buildBorder(kPrimaryColor),
-        hintText: 'Enter Note title : ',
-        hintStyle: const TextStyle(color: kPrimaryColor)
+        // hintStyle: const TextStyle(color: kPrimaryColor)
         )
     );
   }

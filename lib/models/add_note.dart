@@ -14,7 +14,10 @@ class AddNote extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(height: 32,),
-          MyTxtField( ),
+          MyTxtField(hint: 'Title :', maxLines: 1, ),
+          Spacer(),
+          MyTxtField(hint: 'Details :', maxLines: 4,),
+          Spacer(),
         ],
       ),
     );
